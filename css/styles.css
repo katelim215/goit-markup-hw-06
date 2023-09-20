@@ -594,6 +594,8 @@ header {
     transform: translateY(0);
 }
 
+/* modal contents */
+
 .modal {
     position: fixed;
     top: 0px;
@@ -674,4 +676,40 @@ header {
 
 .modal-close:hover .modal-close-link {
     color: var(--white);
+}
+
+.user-contact-heading {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--navyblue);
+    text-align: center;
+    padding-top: 72px;
+    margin-bottom: 16px;
+}
+
+.modal-body {
+    padding: 0 24px;
+}
+
+.form-label {
+    color: var(--lightslate);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.form-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.form-label-text {
+    position: absolute;
+    top: -20px;
 }
