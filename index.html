@@ -381,53 +381,48 @@
                 <div class="modal-body">
                     <form action="" class="user-contact">
                         <div class="form-name form-group">
-                            <label class="form-label">
+                            <label class="form-label" for="full_name">
                                 <span class="form-label-text">Name</span>
-                                <input type="text" name="full_name">
-                                <a href="#" class="form-name-link">
-                                    <svg class="form-icon">
-                                        <use href="images/icons.svg#icon-form-person" />
-                                    </svg>
-                                </a>
+                                <input class="form-input" type="text" name="full_name">
+                                <svg class="form-icon">
+                                    <use href="images/icons.svg#icon-form-person" />
+                                </svg>
                             </label>
-                            
                         </div>
                         <div class="form-phone form-group">
-                            <label class="form-label">
+                            <label class="form-label" for="phone">
                                 <span class="form-label-text">Phone</span>
-                                <input type="tel" name="phone">
-                                <a href="#" class="form-link">
-                                    <svg class="form-icon">
-                                        <use href="images/icons.svg#icon-form-phone" />
-                                    </svg>
-                                </a>
+                                <input class="form-input" type="tel" name="phone">
+                                <svg class="form-icon">
+                                    <use href="images/icons.svg#icon-form-phone" />
+                                </svg>
                             </label>
                             
                         </div>
                         <div class="form-email form-group">
-                            <label class="form-label">
+                            <label class="form-label" for="email">
                                 <span class="form-label-text">Email</span>
-                                <input type="email" name="email">
-                                <a href="#" class="form-email-link">
-                                    <svg class="form-icon">
-                                        <use href="images/icons.svg#icon-form-email" />
-                                    </svg>
-                                </a>
+                                <input class="form-input" type="email" name="email">
+                                <svg class="form-icon">
+                                    <use href="images/icons.svg#icon-form-email" />
+                                </svg>
                             </label>
                             
                         </div>
                         <div class="form-comment form-group">
-                            <label class="form-label">
+                            <label class="form-label" for="comments">
                                 <span class="form-label-text">Comment</span>
-                                <input type="text" placeholder="Text input" name="comment">
+                                <textarea class="form-input comment" name="comments" rows="10" placeholder="Text input"></textarea>
                             </label>
                         </div>
                         
-                        <div class="form-agree">
-                            <label>
-                                <input type="checkbox" name="agree">
-                                I accept the terms and conditions of the
-                                <a href="#">Privacy Policy</a>
+                        <div class="form-agree form-group">
+                            <label class="form-agree-content" for="agreement">
+                                <input type="checkbox" name="agreement" value="agree" required>
+                                <span class="form-agree-text">
+                                    I accept the terms and conditions of the
+                                    <a href="#">Privacy Policy</a>
+                                </span>
                             </label>
                         </div>
                         <div class="submit-btn">

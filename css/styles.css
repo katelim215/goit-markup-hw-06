@@ -31,6 +31,10 @@ img {
     height: auto;
 }
 
+input, textarea {
+    outline: none;
+}
+
 /* page header */
 
 header {
@@ -678,6 +682,8 @@ header {
     color: var(--white);
 }
 
+/* modal content */
+
 .user-contact-heading {
     font-size: 16px;
     line-height: 24px;
@@ -697,19 +703,51 @@ header {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.48px;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 4px;
+    margin-bottom: 8px;
 }
 
 .form-icon {
     width: 18px;
-    height: 18px;
+    height: 24px;
+    position: absolute;
+    transform: translateY(110%);
+    left: 40px;
+    fill: var(--navyblue);
 }
 
 .form-label-text {
-    position: absolute;
-    top: -20px;
+    display: block;
+    color: var(--lightslate);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.form-input {
+    display: flex;
+    height: 40px;
+    position: relative;
+    padding: 11px 0px 11px 38px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--navybluemodal);
+    font-family: inherit;
+}
+
+.form-input.comment {
+    height: 120px;
+    padding-left: 16px;
+    resize: none;
+}
+
+.form-agree-text {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    color: var(--lightslate);
 }
