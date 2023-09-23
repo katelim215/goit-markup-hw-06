@@ -407,6 +407,11 @@ header {
     justify-content: space-around;
 }
 
+/* .footer-container {
+    display: flex;
+    flex-direction: row;
+} */
+
 .footer-container-logo {
     display: inline-flex;
     align-items: flex-start;
@@ -478,6 +483,70 @@ header {
     background-color: var(--green);
 }
 
+.subscribe {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.footer-subscribe {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.footer-label-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 0px 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: var(--navyblue);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+}
+
+.footer-label-input::placeholder {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+}
+
+.footer-subscribe-btn {
+    display: inline-flex;
+    width: 165px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: var(--iris);
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    gap: 16px;
+    margin-left: 24px;
+    padding: 8px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: var(--ocean);
+}
 
 /* portfolio page */
 
@@ -710,6 +779,10 @@ header {
     margin-bottom: 8px;
 }
 
+.form-label:nth-child(4) {
+    margin-bottom: 16px;
+}
+
 .form-icon {
     width: 18px;
     height: 24px;
@@ -717,6 +790,7 @@ header {
     transform: translateY(110%);
     left: 40px;
     fill: var(--navyblue);
+    transition-property: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label-text {
@@ -737,6 +811,9 @@ header {
     border-radius: 4px;
     border: 1px solid var(--navybluemodal);
     font-family: inherit;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input.comment {
@@ -745,9 +822,97 @@ header {
     resize: none;
 }
 
+.form-input:hover,
+.form-input:focus {
+    border-color: var(--iris);
+}
+
+.form-input:hover+ .form-icon,
+.form-input:focus+ .form-icon {
+    fill: var(--iris);
+}
+
+.form-agree-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+.form-agree-check-box {
+    display: inline-block;
+    border-radius: 2px;
+    fill: none;
+    height: 16px;
+    width: 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-agree-check-box:hover,
+.form-agree-check-box:focus {
+    border: 1px solid var(--ocean);
+}
+
+.check-mark-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--navybluemodal);
+    cursor: pointer;
+}
+
+
+.checkbox:checked + .form-agree-check-box {
+    background-size: contain;
+    fill: var(--white);
+    border-radius: 2px;
+    border: 1px solid var(--ocean);
+    background-color: var(--ocean);
+}
+
 .form-agree-text {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.48px;
     color: var(--lightslate);
+    flex-shrink: 0;
+}
+
+.submit-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit-btn {
+    padding: 16px 32px;
+    background-color: var(--iris);
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    width: 169px;
+    height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: var(--ocean);
 }
